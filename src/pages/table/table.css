@@ -1,0 +1,69 @@
+table{
+    background-color: rgba(237,246,249,1);
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    height: 25px;
+  }
+
+
+
+.th-task{
+    min-width: 300px;
+    max-width: 300px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.th-person{
+        min-width: 150px;
+    max-width: 150px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+}
+.th-status{
+    min-width: 150px;
+    max-width: 150px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+    font-weight: bold;
+}
+.th-date{
+    min-width: 150px;
+    max-width: 150px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+}
+
+.select-status{
+    width: 100%;
+    height: 100%;
+    border: none;
+    text-align: center;
+    font-weight: bold;
+}
+
+select:focus-visible{
+    border: none;
+    outline: none;
+}
+
+.yell {
+    background: #ffbf00;
+    color: black;
+}
+.red{
+    background: #ed2124;
+    color: #fff;
+}
+.green{
+    background: #32cd33;
+    color: #fff;
+}

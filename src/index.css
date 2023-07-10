@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Bangers&family=Combo&family=Poppins:wght@300&family=Space+Mono&display=swap');
+
+:root{
+  --font-family: "Poppins", sans-serif
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: rgb(0,109,119);
+  background: linear-gradient(149deg, rgba(0,109,119,1) 0%, rgba(237,246,249,1) 49%);
+}
+
+
+
+.popup-layout{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+
+  justify-content: center;
+}
+
+.popup-layout_div{
+  font-family: var(--font-family);
+  background-color: #fff;
+  width: 400px;
+  height: 300px;
+  border-radius: 10px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.popup-layout_div_input input{
+  width: 80%;
+  padding: 5px 0;
+  font-size: 0.8rem;
+}
+
+.popup-layout_div_input-task-popup input{
+  width: 90%;
+  padding: 5px 0;
+  font-size: 0.8rem;
+  margin: 2px 0;
+}
+.popup-layout_div_input-task-popup select{
+  width: 90%;
+  padding: 5px 0;
+  font-size: 0.8rem;
+  margin: 2px 0;
+}
+
+
+
+.popup-layout_div_buttons{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.popup-layout_div_buttons button{
+  margin: 0 10px;
+  width: 100px;
+  padding: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.create-btn{
+  background-color: #02c39a;
+  border: none;
+  outline: none;
+  color: #fff;
+}
+
+.create-btn:hover{
+  background-color: #06b690;
+}
+
+.cancel-btn{
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+
+.cancel-btn:hover{
+  background-color: #ccc;
+}
+
+
+.link-style{
+  color: #fff;
+  text-decoration: none;
+}
+
+
+
+.link-style:visited{
+  color: #fff;
+  text-decoration: none;
+}

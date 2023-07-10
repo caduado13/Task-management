@@ -1,0 +1,52 @@
+.task-manager_sidebar-container{
+    background: rgb(0,109,119);
+    background: linear-gradient(90deg, rgba(0,109,119,1) 0%, rgba(0,109,119,0.6895133053221288) 100%); 
+    margin-right: 50px;
+    width: 400px;
+    padding: 20px;
+    height: 95%;
+    border-radius: 10px;
+    font-family: var(--font-family);
+}
+
+.icon{
+    padding-right: 5px;
+}
+
+.task-manager_sidebar-container_menu-home p{
+    color: #EDF6F9;
+    font-size: 1.4rem;
+}
+
+.task-manager_sidebar-container_inputs{
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+.task-manager_sidebar-container_inputs input{
+    height: 25px;
+}
+
+.task-manager_sidebar-container_inputs span{
+    display: flex;
+    color: #EDF6F9;
+    cursor: pointer;
+}
+
+.task-manager_sidebar-container_inputs span:hover{
+    color: #83C5BE;
+    transition: 1s;
+}
+
+.task-manager_sidebar-container_work-container_list li{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    color: #EDF6F9;
+    cursor: pointer;
+}
+
+.task-manager_sidebar-container_work-container_list li:hover{
+    background-color: rgba(0, 109, 119, 1);
+}
