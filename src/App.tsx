@@ -11,8 +11,8 @@ function App() {
       <Sidebar/>
       <Management>
       <Routes>
-        <Route path="/" element = {<AppComponent txt = {"Home"}/>}></Route>
-        <Route path="/task/:id/:text" element={<AppComponent/>}></Route>
+        <Route path="/Task-management" element = {<AppComponent txt = {"Home"}/>}></Route>
+        <Route path="/Task-management/:id/:text" element={<AppComponent/>}></Route>
       </Routes>
       </Management>
     </BrowserRouter>

@@ -51,6 +51,8 @@ const AppComponent = ({txt}:ComponentType) => {
     handleArr();
   }, [trData]);
 
+  console.log(itemData)
+
   return (<div className="">
       <div>
         <h1>{text ? text : txt}</h1>

@@ -27,7 +27,7 @@ const Sidebar = () => {
       <div className="task-manager_sidebar-container_menu-home">
           {iconsType.map((item, index) =>(
             <p key={index}>
-              <Link to = {"/"} className="link-style" onClick={()=>{setNum(null)}}>
+              <Link to = {"/Task-management"} className="link-style" onClick={()=>{setNum(null)}}>
                 <span className="icon">{item.icon}</span>
                 <span className="icon">{item.text}</span>
               </Link>

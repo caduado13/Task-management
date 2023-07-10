@@ -27,7 +27,8 @@ const Table: React.FC<TableProps> = ({table, id, num}) => {
 
   const handleStatusChange = (tableId:number, rowIndex:number, newStatus:string) => {
     setItemData((prevState) => {
-      const updatedTable = { ...prevState };
+      console.log(prevState)
+      const updatedTable = [...prevState] ;
       updatedTable[tableId].data[rowIndex].status = newStatus;
       return updatedTable;
     });

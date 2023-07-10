@@ -24,7 +24,7 @@ const List: React.FC<UlProps> = ({items}) => {
   return (
     <ul className="task-manager_sidebar-container_work-container_list">
     {items.map((item)=>(
-      <Link to={`/task/${item.id}/${item.text}`} className="link-style" key={item.id}>
+      <Link to={`/Task-management/${item.id}/${item.text}`} className="link-style" key={item.id}>
         <li id={item.id.toString()}  onClick={handleClick}>
           <span style={{display:"flex", padding: "0 5px 0 0"}}><BsListTask/></span>
           {item.text}
