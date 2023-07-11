@@ -50,9 +50,7 @@ const AppComponent = ({txt}:ComponentType) => {
   useEffect(()=>{
     handleArr();
   }, [trData]);
-
-  console.log(itemData)
-
+  
   return (<div className="">
       <div>
         <h1>{text ? text : txt}</h1>

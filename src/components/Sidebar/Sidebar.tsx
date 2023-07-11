@@ -1,4 +1,5 @@
 import "./sidebar.css";
+import { useState } from "react";
 import {AiFillHome, AiFillBook} from "react-icons/ai";
 import {BsFillFilePlusFill} from "react-icons/bs";
 import { useStateContext } from "../../context/contextProvider";
@@ -19,8 +20,14 @@ const iconsType:{icon: React.ReactElement, text: String}[] = [
 
 
 const Sidebar = () => {
+  const [searchValue, setSearcheValue] = useState("")
   const {toggleValue, items} = useStateContext();
-  const {setNum} = useTableContext()
+  const {setNum} = useTableContext();
+
+  const handleInputSearch = (e:React.ChangeEvent<HTMLInputElement>) => {
+    const valueTarget = e.target.value
+    setSearcheValue(valueTarget)
+  }
 
   return (
     <div className="task-manager_sidebar-container">
@@ -35,11 +42,11 @@ const Sidebar = () => {
           ))}
       </div>
       <div className="task-manager_sidebar-container_inputs">
-        <input type="text" placeholder="Search"/>
+        <input type="text" placeholder="Search" value={searchValue} onChange={handleInputSearch}/>
         <span onClick={ () => toggleValue()} ><BsFillFilePlusFill size = "25"/></span>
       </div>
       <div className="task-manager_sidebar-container_work-container">
-         <List items={items}/>
+        {searchValue === "" ? <List items={items}/> : <List items={items.filter((item) => item.text.toLowerCase().match(searchValue.toLowerCase()))}/>}
       </div>
     </div>
   )
