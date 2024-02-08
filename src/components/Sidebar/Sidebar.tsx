@@ -11,10 +11,10 @@ import { useTableContext } from "../../context/tableProvider";
 const iconsType:{icon: React.ReactElement, text: String}[] = [
   {
     icon: <AiFillHome/>,
-    text: "Home"
+    text: "Home",
   },{
     icon: <AiFillBook/>,
-    text: "My work"
+    text: "My work",
   }
 ]
 
@@ -46,7 +46,10 @@ const Sidebar = () => {
         <span onClick={ () => toggleValue()} ><BsFillFilePlusFill size = "25"/></span>
       </div>
       <div className="task-manager_sidebar-container_work-container">
-        {searchValue === "" ? <List items={items}/> : <List items={items.filter((item) => item.text.toLowerCase().match(searchValue.toLowerCase()))}/>}
+        {searchValue === "" 
+          ? <List items={items}/> 
+          : <List items={items.filter((item) => item.text.toLowerCase().match(searchValue.toLowerCase()))}/>
+        }
       </div>
     </div>
   )

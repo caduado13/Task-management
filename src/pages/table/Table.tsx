@@ -2,6 +2,7 @@ import "./table.css";
 import { useTableContext } from "../../context/tableProvider";
 
 
+
 type dataTypes = {
   task: string;
   people: string;
